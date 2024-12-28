@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import "./styles.css";
 export const metadata: Metadata = {
   title: {
     // absolute: "",
@@ -16,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="bg-blue-300 p-1">
+        <header className="bg-blue-300 p-4">
           <p>Header</p>
         </header>
-        {children}
-        <footer className="bg-gray-500 1p">Footer</footer>
+        <div className="p-4">{children}</div>
+        <footer className="bg-gray-500 p-4 text-white">Footer</footer>
       </body>
     </html>
   );
