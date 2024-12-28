@@ -12,7 +12,7 @@ export default function DashboardLayout({
   login: React.ReactNode;
 }) {
   const isLoggedIn = true;
-  return !isLoggedIn ? (
+  return isLoggedIn ? (
     <>
       <div>{children}</div>
       <div className="flex">
